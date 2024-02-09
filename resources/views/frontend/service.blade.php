@@ -376,7 +376,7 @@
                                     <input type="text" name="b_c7b7808bb5a16b9f09c4e1fe0_96b8442f9a" tabindex="-1" value="">
                                 </div>
                                 <div class="col-auto">
-                                    <input class="btn btn-outline-primary" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">
+                                    <input class="btn btn-outline-primary"  value="Subscribe" name="subscribe">
                                 </div>
                             </div>
                         </form>

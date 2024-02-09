@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.lists {
+    display: flex;
+    font-size: 22px;
+    font-weight: bold;
+    list-style: none;
+}
+
+.lists li {
+    padding-right: 50px;
+
+}
+
+.lists li a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.bg-img {
+    background-image: url('img/nn.webp');
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+}
+
+.parent {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 50px;
+    color: white;
+    line-height: 30px;
+}
+
+.content h2 {
+    font-size: 40px;
+    color: white;
+    line-height: 30px;
+}
+
+/* Default button styles */
+.btnn-1,
+.btnn-2 {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 8px;
+    width: 200px;
+    margin-inline: 5px;
+}
+
+.btnn-2 {
+    background-color: white;
+    color: black;
+}
+
+.btn-group {
+
+    margin-left: 72px;
+}
+
+/* Add padding to the top of the content for devices with a width of 1496px and above */
+@media (min-width: 1496px) {
+    .content {
+        padding-top: 100px;
+        /* Adjust this value based on your design needs */
+    }
+}
+
+@media (max-width: 768px) {
+    .bg-img {
+        padding: 80px 0;
+    }
+
+    .content h1 {
+        font-size: 40px;
+        line-height: 25px;
+    }
+
+    .content h2 {
+        font-size: 30px;
+        line-height: 25px;
+    }
+
+    .btnn-1,
+    .btnn-2 {
+        font-size: 20px;
+        width: 150px;
+    }
+
+    .btn-group {
+        flex-direction: row;
+    }
+}
+
+/* Media queries for small devices */
+@media (max-width: 576px) {
+    .bg-img {
+        padding: 60px 0;
+    }
+
+    .content {
+        padding-top: 80px;
+        /* Adjust this value based on your design needs */
+    }
+
+    .content h1 {
+        font-size: 30px;
+        line-height: 20px;
+    }
+
+    .content h2 {
+        font-size: 24px;
+        line-height: 20px;
+    }
+
+    .btnn-1,
+    .btnn-2 {
+        font-size: 20px;
+        width: 150px;
+        margin-top: 20px;
+    }
+
+    .btn-group {
+        flex-direction: column;
+    }
+}
+
+/* Media queries for devices with a width of 325px and below */
+@media (max-width: 325px) {
+    .bg-img {
+        height: 120vh;
+        /* Adjust the height as needed */
+    }
+
+    .content h1 {
+        font-size: 24px;
+        /* Adjust the font size as needed */
+        line-height: 18px;
+    }
+
+    .content h2 {
+        font-size: 20px;
+        /* Adjust the font size as needed */
+        line-height: 16px;
+    }
+
+    .btnn-1,
+    .btnn-2 {
+        font-size: 16px;
+        /* Adjust the font size as needed */
+        width: 120px;
+        /* Adjust the width as needed */
+        margin-top: 10px;
+        /* Reduce the margin between buttons */
+    }
+}
